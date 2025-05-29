@@ -1,0 +1,15 @@
+[submodule "FateAvatar"]
+	path = FateAvatar
+	url = https://github.com/ysshwan147/FateAvatar.git
+[submodule "MICA"]
+	path = MICA
+	url = https://github.com/ysshwan147/MICA.git
+[submodule "metrical-tracker"]
+	path = metrical-tracker
+	url = https://github.com/ysshwan147/metrical-tracker.git
+[submodule "INSTA"]
+	path = INSTA
+	url = https://github.com/ysshwan147/INSTA.git
+[submodule "examples"]
+	path = examples
+	url = https://github.com/ysshwan147/examples.git
