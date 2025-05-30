@@ -197,6 +197,7 @@ Please refer to [this repository](https://github.com/ysshwan147/examples/tree/ma
 ```
 cp ./data/style/mount-original.png ./examples/fast_neural_style/images/style-images/mount-original.png
 
+cd examples/fast_neural_style
 conda activate style
 python crop.py --input_path ./images/style-images/mount-original.png --output_path ./images/style-images/mount.png --pad_ratio 0.07
 
