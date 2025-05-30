@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# >>> Conda initialize <<<
+CONDA_BASE=$(conda info --base)
+source "$CONDA_BASE/etc/profile.d/conda.sh"
+# <<< Conda initialize >>>
+
 subjects=("stj" "sys" "ysh")
 
 # MICA
@@ -26,7 +31,7 @@ for subject in "${subjects[@]}"; do
 done
 
 cd metrical-tracker
-conda activate metrical-tracker
+conda activate tracker
 for subject in "${subjects[@]}"; do
     echo "Processing $subject"
     python tracker.py --cfg ./configs/actors/$subject.yml
@@ -43,7 +48,7 @@ conda activate rta
 cd INSTA/scripts
 for subject in "${subjects[@]}"; do
     echo "Processing $subject"
-    ./generate.sh ../../metrical-tracker/output/$subject ../data/$subject 40
+    ./generate.sh /root/CS479-ASURA/metrical-tracker/output/$subject /root/CS479-ASURA/INSTA/data/$subject 40
 done
 conda deactivate
 cd ../..

@@ -38,11 +38,11 @@ We use a total of seven assets per subject as input to the ASURA project: three 
 ```
 CS479-ASURA
 |-- FateAvatar
-|-- FateAvatar2
 |-- INSTA
 |-- MICA
 |-- README.md
-|-- data        <--- here
+|-- assets
+|-- data    <-- here
 |-- data.sh
 |-- examples
 `-- metrical-tracker
@@ -72,6 +72,8 @@ Please refer to [this repository](https://github.com/ysshwan147/MICA?tab=readme-
 cd MICA
 ./install.sh
 cd ..
+
+apt install libgl1-mesa-glx
 ```
 
 #### metrical-tracker
